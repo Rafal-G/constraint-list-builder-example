@@ -4,6 +4,7 @@
   "description": "An example of how to use the constraint-list-builder",
   "main": "index.js",
   "scripts": {
+    "example": "tsc src/main.ts && node src/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -16,6 +17,7 @@
   "author": "Rafal Gostynski",
   "license": "Apache-2.0",
   "dependencies": {
-    "constraint-list-builder": "^1.0.6"
+    "constraint-list-builder": "^1.0.6",
+    "typescript": "^2.6.2"
   }
 }
