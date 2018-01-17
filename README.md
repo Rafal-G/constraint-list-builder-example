@@ -7,3 +7,5 @@ https://github.com/Rafal-G/constraint-list-builder
 ```
 npm i && npm run example
 ```
+
+The code in main.ts will be compiled and then run.
