@@ -1,0 +1,21 @@
+{
+  "name": "constraint-list-builder-example",
+  "version": "1.0.0",
+  "description": "An example of how to use the constraint-list-builder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "example",
+    "demo",
+    "constraint",
+    "list",
+    "util"
+  ],
+  "author": "Rafal Gostynski",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "constraint-list-builder": "^1.0.6"
+  }
+}
