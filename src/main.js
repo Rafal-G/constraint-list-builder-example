@@ -17,7 +17,7 @@ var Startup = /** @class */ (function () {
             'id': 'fakeId',
             'someOtherStuff': 'working'
         });
-        console.log("this node wasn't added " + nodeAdded2);
+        console.log("this node wasn't added because ID isn't in the allowed fields of node1 " + nodeAdded2);
         return 0;
     };
     return Startup;
