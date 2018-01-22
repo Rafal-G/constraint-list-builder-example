@@ -26,6 +26,16 @@ var Startup = /** @class */ (function () {
         catch (e) {
             console.log('adding node without id thows exception ');
         }
+        var nodeAdded3 = builder.addNode({
+            'id': 'node2',
+            'otherData': 'someOtherData'
+        });
+        console.log("node2 can follow node node1 so this will be added " + nodeAdded3);
+        var nodeFail2 = builder.addNode({
+            'id': 'node3',
+            'otherData': 'more other data'
+        });
+        console.log("node3 cannot follow node2 so this won't be added " + nodeFail2);
         return builder.getList().length;
     };
     return Startup;

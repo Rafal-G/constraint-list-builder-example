@@ -26,6 +26,19 @@ class Startup {
             console.log('adding node without id thows exception ')
         }
 
+        let nodeAdded3 = builder.addNode({
+            'id': 'node2',
+            'otherData': 'someOtherData'
+        })
+        console.log(`node2 can follow node node1 so this will be added - node added status ${nodeAdded3}-`);
+
+        let nodeFail2 = builder.addNode({
+            'id': 'node3',
+            'otherData': 'more other data'
+        });
+        console.log(`node3 cannot follow node2 so this won't be added - node added status: ${nodeFail2}-`)
+
+
         return builder.getList().length;
     }
 }
