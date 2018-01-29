@@ -3,7 +3,9 @@ import { correctDef } from './data/correct.def'
 
 class Startup {
     public static main(): number {
+        console.log('---------------------');
         console.log('Creating list builder');
+        console.log('---------------------');
         let builder = new ListBuilder(correctDef);
 
         let nodeAdded1 = builder.addNode({
@@ -37,7 +39,17 @@ class Startup {
             'otherData': 'more other data'
         });
         console.log(`node3 cannot follow node2 so this won't be added - node added status: ${nodeFail2}-`)
+        console.log(`\n`)
+        console.log('---------------------');
+        console.log(`Getting information from builder`)
+        console.log('---------------------');
+        console.log(`get the full list`);
+        builder.getList().forEach((e) => console.log(e));
 
+        console.log('\n');
+        console.log(`get the full definition file`);
+        builder.getDefinition().forEach((e) => console.log(e));
+        console.log('---------------------');
 
         return builder.getList().length;
     }
