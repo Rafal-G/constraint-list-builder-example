@@ -44,6 +44,7 @@ var Startup = /** @class */ (function () {
         console.log('---------------------');
         console.log("get the full list");
         builder.getList().forEach(function (e) { return console.log(e); });
+        console.log('\n');
         console.log("get the full definition file");
         builder.getDefinition().forEach(function (e) { return console.log(e); });
         console.log('---------------------');
